@@ -63,10 +63,12 @@ public class ShortestDistance {
 
             for(int i = 1; i <= n; i++)
             {
+                int[] route = {1,2,3,4,5};
 
                 // If it is not good vertex
                 if (a[i] == 0)
                     continue;
+
 
                 // Keep all vertices not visited
                 // and distance as MAXI

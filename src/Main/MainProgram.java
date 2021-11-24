@@ -1,7 +1,8 @@
 package Main;
 
+import javax.swing.*;
 import java.util.ArrayList;
-import Main.ShortestDistance;
+import java.util.Scanner;
 
 
 public class MainProgram {
@@ -9,7 +10,7 @@ public class MainProgram {
     static final int N = 100005;
     static final int MAXI = 99999999;
 
-    public static void main(String[] args)
+    public static void showDistance()
     {
         ShortestDistance SD = new ShortestDistance();
         // Number of vertices and edges
@@ -64,12 +65,22 @@ public class MainProgram {
                 dist = new int[N];
 
         // To keep good vertices
-        for( int i = 0; i<25 ; i++){
-            a[i] = 1;
-        }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter source");
+        int source = scanner.nextInt();
+
+        System.out.println("Enter destination");
+        int destination = scanner.nextInt();
+
+        a[source] = a[destination] = 1;
 
         System.out.println(SD.minDistance(
                 gr, n, dist, vis, a, k));
+
+
     }
 
 }
+
+  
