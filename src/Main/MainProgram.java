@@ -30,7 +30,6 @@ public class MainProgram {
         SD.add_edge(weighted_edge, 3, 4, 110);
         SD.add_edge(weighted_edge, 4, 5, 40);
         SD.add_edge(weighted_edge, 5, 6, 80);
-        SD.add_edge(weighted_edge, 5, 6, 80);
         SD.add_edge(weighted_edge, 6, 30, 163); //waiting
         SD.add_edge(weighted_edge, 30, 7, 80);
         SD.add_edge(weighted_edge, 7, 8, 344);
@@ -40,6 +39,15 @@ public class MainProgram {
         SD.add_edge(weighted_edge, 8, 11, 163);
         SD.add_edge(weighted_edge, 11, 12, 163); // waiting
         SD.add_edge(weighted_edge, 12, 13, 163);
+        SD.add_edge(weighted_edge, 13, 14, 204);
+        SD.add_edge(weighted_edge, 14, 15, 117);
+        SD.add_edge(weighted_edge, 15, 16, 103);
+        SD.add_edge(weighted_edge, 16, 17, 109);
+
+
+
+
+
 
 
         // Number of good nodes
