@@ -25,11 +25,15 @@ public class MainProgram {
         }
 
         // Function call to add edges
-        SD.add_edge(weighted_edge, 0, 1, 139);
-        SD.add_edge(weighted_edge, 1, 2, 100);
-        SD.add_edge(weighted_edge, 2, 3, 90);
-        SD.add_edge(weighted_edge, 3, 4, 120);
-        SD.add_edge(weighted_edge, 4, 5, 101);
+        SD.add_edge(weighted_edge, 1, 2, 117);
+        SD.add_edge(weighted_edge, 2, 3, 190);
+        SD.add_edge(weighted_edge, 3, 4, 110);
+        SD.add_edge(weighted_edge, 4, 5, 40);
+        SD.add_edge(weighted_edge, 5, 6, 80);
+        SD.add_edge(weighted_edge, 5, 6, 80);
+        /////
+        SD.add_edge(weighted_edge, 30, 7, 80);
+
 
 
 
