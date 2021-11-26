@@ -7,8 +7,7 @@ import java.util.PriorityQueue;
 
 
 public class ShortestDistance {
-    // Java program to find the shortest pairwise
-// distance between any two different good nodes.
+    // Java program to find the shortest pairwise distance between two points.
 
 
         static class Pair
@@ -29,17 +28,17 @@ public class ShortestDistance {
         static final int MAXI = 99999999;
 
         // Function to add edges
-        static void add_edge(ArrayList<Pair> gr[],
+        static void add_edge(ArrayList<Pair> weighted_edge[],
                              int x, int y, int weight)
         {
-            gr[x].add(new Pair(y, weight));
-            gr[y].add(new Pair(x, weight));
+            weighted_edge[x].add(new Pair(y, weight));
+            weighted_edge[y].add(new Pair(x, weight));
         }
 
         // Function to find the shortest
 // distance between any pair of
 // two different good nodes
-        static int minDistance(ArrayList<Pair> gr[], int n,
+        static int minDistance(ArrayList<Pair> weighted_edge[], int n,
                                int dist[], int vis[],
                                int a[], int k)
         {
@@ -122,10 +121,10 @@ public class ShortestDistance {
                     }
 
                     // Go to all adjacent vertices
-                    for(int j = 0; j < gr[v].size(); j++)
+                    for(int j = 0; j < weighted_edge[v].size(); j++)
                     {
-                        int to = gr[v].get(j).source;
-                        int weight = gr[v].get(j).destination;
+                        int to = weighted_edge[v].get(j).source;
+                        int weight = weighted_edge[v].get(j).destination;
 
                         // If distance is less
                         if (dist[v] + weight < dist[to])
